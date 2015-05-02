@@ -1,0 +1,412 @@
+html {
+	height: 100%; 
+	background-color: #414141;
+
+}
+
+body{
+	height: 100%;
+	
+}
+
+.fullwrap {
+	height: 100%;
+	width: 100%;
+	max-width: 1750px;
+	background-color: #414141;
+
+}
+
+.overflow {
+	height: 1060px;
+	width: 2260px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.midwrap {
+	height: 1025px;
+	width: 1000px;
+	background-color: #A1A1A1;
+	position: relative;
+	box-shadow: 0px 0px 20px black, 0px 0px 2px black inset;
+	background-image: url("http://i.imgur.com/U9oNTO9.png");
+	background-repeat:no-repeat;
+	left: 350px;
+
+}
+
+.footer {
+	width: 1500px;
+	height: 100%;
+	background-color: #242424;
+	position: relative;
+	bottom: 120px;
+	z-index: 5;
+}
+
+.header {
+	width: 1000px;
+	height: 110px;
+	background-color: white;
+	box-shadow: 0px 0px 3px black inset;
+	background-image: url("http://i.imgur.com/u43E2Lr.png");
+	border-bottom: 2px dimgrey solid;
+	margin-top: -12px;
+}
+
+h1 {
+	font-size: 80px;
+	padding-left: 115px;
+	padding-top: 20px;
+	letter-spacing: 10px;
+	font-family: 'Shadows Into Light Two', Helvetica;
+	text-shadow: 0px 0px 10px #D4BE66, 0px 0px 30px lightgrey ;
+}
+
+.bottomtree {
+	position: absolute;
+	left: 900px;
+	display: inline-block;
+	top: 353px;
+	z-index: 3;
+	-moz-user-drag: none;
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+   	user-select: none;
+   	user-drag: none; 
+	-webkit-user-drag: none;
+}
+
+.bottomtree2 {
+	position: absolute;
+	left: -335px;
+	display: inline-block;
+	top: 50px;
+	z-index: 0;
+	-moz-user-drag: none;
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+   	user-select: none;
+   	user-drag: none; 
+	-webkit-user-drag: none;
+}
+
+.bottomgrass {
+	position: relative;
+	bottom: 81px;
+	z-index: 4;
+	-moz-user-drag: none;
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+   	user-select: none;
+   	user-drag: none; 
+	-webkit-user-drag: none;
+}
+
+.apple {
+	position: absolute;
+    width:20px;
+    height:20px;
+    -webkit-transition: all 1.2s cubic-bezier(0.740, 0, 0.910, 0.550); 
+	-webkit-transition: all 1.2s cubic-bezier(0.740, -0.025, 0.910, 0.550); 
+    -moz-transition: all 1.2s cubic-bezier(0.740, -0.025, 0.910, 0.550); 
+    -ms-transition: all 1.2s cubic-bezier(0.740, -0.025, 0.910, 0.550); 
+    -o-transition: all 1.2s cubic-bezier(0.740, -0.025, 0.910, 0.550); 
+    transition: all 1.2s cubic-bezier(0.740, -0.025, 0.910, 0.550);
+    display: inline-block;
+    left: 1550px;
+    top: 523px;
+    z-index: 9999;
+}
+
+input:checked + .apple {
+	top: 900px;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); 
+	-webkit-transform:rotate(180deg);  
+	opacity: 0;
+}
+
+input{display:none}
+
+.cloud1 {
+	position: absolute;
+	right: -1500px;
+	/background-color: red;
+
+	-webkit-animation: moveLeft 40s;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation: moveLeft 40s;
+	-moz-animation-iteration-count: infinite;
+
+	-ms-animation: moveLeft 40s;
+	-ms-animation-iteration-count: infinite;
+
+	-o-animation: moveLeft 40s;
+	-o-animation-iteration-count: infinite;
+
+	animation: moveLeft 40s;
+	animation-iteration-count: infinite;
+}
+
+
+.cloud2 {
+	position: absolute;
+	right: 1400px;
+	top: 150px;
+	/background-color: blue;
+
+	animation-timing-function: linear;
+
+	-webkit-animation: moveLeft 45s;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation: moveLeft 45s;
+	-moz-animation-iteration-count: infinite;
+
+	-ms-animation: moveLeft 45s;
+	-ms-animation-iteration-count: infinite;
+
+	-o-animation: moveLeft 45s;
+	-o-animation-iteration-count: infinite;
+
+	animation: moveLeft 45s;
+	animation-iteration-count: infinite;
+}
+
+.cloud3 {
+	position: absolute;
+	right: 1400px;
+	top: 300px;
+	/background-color: orange;
+	
+	animation-timing-function: linear;
+
+	-webkit-animation: moveLeft2 50s;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation: moveLeft2 50s;
+	-moz-animation-iteration-count: infinite;
+
+	-ms-animation: moveLeft2 50s;
+	-ms-animation-iteration-count: infinite;
+
+	-o-animation: moveLeft2 50s;
+	-o-animation-iteration-count: infinite;
+
+	animation: moveLeft2 50s;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes moveLeft2
+{
+	0%   { right: 1700px; }
+	100% { right: -160%; }
+}
+
+@-moz-keyframes moveLeft2
+{
+	0%   { right: 1700px; }
+	100% { right: -160%; }
+}
+
+@-ms-keyframes moveLeft2
+{
+	0%   { right: 1700px; }
+	100% { right: -160%; }
+}
+
+@keyframes moveLeft2
+{
+	0%   { right: 1700px; }
+	100% { right: -160%; }
+
+}
+
+.cloud4 {
+	position: absolute;
+	right: 1500px;
+	top: -80px;
+	/background-color: green;
+
+	-webkit-animation-timing-function: linear;
+
+	-webkit-animation: moveLeft 40s;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation: moveLeft 40s;
+	-moz-animation-iteration-count: infinite;
+
+	-ms-animation: moveLeft 40s;
+	-ms-animation-iteration-count: infinite;
+
+	-o-animation: moveLeft 40s;
+	-o-animation-iteration-count: infinite;
+
+	animation: moveLeft 40s;
+	animation-iteration-count: infinite;
+}
+
+.cloud5 {
+	position: absolute;
+	right: 1600px;
+	top: -100px;
+	overflow: hidden;
+	/background-color: pink;
+
+	-webkit-animation-timing-function: linear;
+
+
+	-webkit-animation: moveLeft 60s;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation: moveLeft 60s;
+	-moz-animation-iteration-count: infinite;
+
+	-ms-animation: moveLeft 60s;
+	-ms-animation-iteration-count: infinite;
+
+	-o-animation: moveLeft 60s;
+	-o-animation-iteration-count: infinite;
+
+	animation: moveLeft 60s;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes moveLeft
+{
+	0%   { right: 1700px; }
+	100% { right: -150%; }
+}
+
+@-moz-keyframes moveLeft
+{
+	0%   { right: 1700px; }
+	100% { right: -150%; }
+}
+
+@-ms-keyframes moveLeft
+{
+	0%   { right: 1700px; }
+	100% { right: -150%; }
+}
+
+@keyframes moveLeft
+{
+	0%   { right: 1700px; }
+	100% { right: -150%; }
+
+}
+
+
+.content {
+	height: 880px;
+	width: 1000px;
+	background-color: transparent;
+	position: relative;
+	box-shadow: 0px 0px 3px black inset;
+	z-index: 2;
+}
+
+.hillary {
+	display: inline-block;
+	margin: 10px 12px 10px 10px;
+	border: 2px solid grey;
+}
+
+h2 {
+	display: inline;
+	bottom: 500px;
+	position: relative;
+	font-size: 25px;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+.text {
+	width: 615px;
+	height: 500px;
+	display: inline-block;
+	position: absolute;
+	background-color: transparent;
+	right: 20px;
+	top: 65px;
+	z-index: 2;
+}
+
+p {
+	line-height: 19px;
+}
+
+ul {
+	list-style-type:circle;
+}
+
+li {
+	padding: 4px 0px 4px 0px;
+	margin-left: 20px;
+}
+
+a:link {color:navy;}      /* unvisited link */
+a:hover {color:dodgerblue;}  /* mouse over link */
+a:active {color:orange;}  /* selected link */
+
+.navbar {
+	background-color: silver;
+	width: 100%;
+	height: 40px;
+	-moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+#navlist {
+	position: relative;
+	margin: auto;
+	left: 48px;
+
+}
+
+.navbutton {
+	display: inline;
+	color: black;
+	font-family: 'Shadows Into Light Two', Helvetica;
+	font-weight: bolder;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	font-size: 20px;
+	padding-right: 15px;
+	padding-left: 15px;
+	position: relative;
+	top: 10px;
+	-webkit-transition: box-shadow 2s ease-out, color .3s, background-color 0s, text-shadow .3s cubic-bezier(0.725, -0.225, 0.205, 1.650);
+    -o-transition: box-shadow 2s ease-out, color .3s, background-color 0s, text-shadow .3s cubic-bezier(0.725, -0.225, 0.205, 1.650);
+    -moz-transition: box-shadow 2s ease-out, color .3s, background-color 0s, text-shadow .3s cubic-bezier(0.725, -0.225, 0.205, 1.650);
+    transition: box-shadow 2s ease-out, color .3s, background-color 0s, text-shadow .3s cubic-bezier(0.725, -0.225, 0.205, 1.650);
+}
+
+.navbutton:hover {
+	color: white;
+	background-color: black;
+	box-shadow: 0px 0px 10px black inset, 0px 0px 20px black inset;
+	text-shadow: 0px 0px 20px white ;
+	-webkit-transition: box-shadow .25s ease-out;
+	-moz-transition: box-shadow .25s ease-out;
+    -ms-transition: box-shadow .25s ease-out;
+   	-o-transition: box-shadow .25s ease-out;
+    transition: box-shadow .25s ease-out;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
